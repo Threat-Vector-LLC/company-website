@@ -4,8 +4,8 @@
  */
  {
     "$schema": "node_modules/wrangler/config-schema.json",
-    "account_id": "82e5aa3e06eba55221231ef482269452",
-    "name": "cloudflare-workers-nextjs-saas-template",
+    "account_id": "e446a52d0ef8181c4583dd48bcb21606",
+    "name": "threat-vector-io-worker",
     "main": ".open-next/worker.js",
     "compatibility_date": "2025-03-01",
     "compatibility_flags": [
@@ -55,7 +55,7 @@
      "services": [
       {
         "binding": "WORKER_SELF_REFERENCE",
-        "service": "cloudflare-workers-nextjs-saas-template"
+        "service": "threat-vector-io-worker"
       }
     ],
 
@@ -78,15 +78,15 @@
     "d1_databases": [
         {
             "binding": "NEXT_TAG_CACHE_D1",
-            "database_name": "cloudflare-workers-nextjs-saas",
-            "database_id": "94dd1269-a29c-4621-adff-1762d1af6926",
+            "database_name": "threat-vector-io-d1",
+            "database_id": "95991d3c-80fa-4235-a53c-4e0c3968f72c",
             "migrations_dir": "src/db/migrations"
         }
     ],
     "kv_namespaces": [
         {
             "binding": "NEXT_INC_CACHE_KV",
-            "id": "c6f2b077e0a34a84b3598558eb833055"
+            "id": "e1023de9a50442b2b3ff6480bf4391ea"
         }
     ]
   }
